@@ -1,0 +1,9 @@
+<% if SpreeLimitQuantity::Config[:limit_quantity]
+  if @product.quantity_limit.nil?
+    @product.quantity_limit = Spree::QuantityLimit.new(:limit => SpreeLimitQuantity::Config[:limited_quantity])
+  end%>
+<%= f.fields_for :quantity_limit do |q_limit| %>
+    <%= q_limit.label :limit, 'Qty Limit' %><br />
+    <%= q_limit.number_field :limit, :min => 0 %>
+  <% end %>
+<% end %>
