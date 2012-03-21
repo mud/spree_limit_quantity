@@ -2,14 +2,14 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_limit_quantity'
-  s.version     = '1.0.0'
-  s.summary     = 'Limit the number of variant qty per order'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.version     = '0.1.0'
+  s.summary     = 'Spree Extension: limit the quantity allowed for purchase for each order per product.'
+  s.description = ''
   s.required_ruby_version = '>= 1.8.7'
 
-  # s.author            = 'You'
-  # s.email             = 'you@example.com'
-  # s.homepage          = 'http://www.spreecommerce.com'
+  s.author            = 'Takashi Okamoto'
+  s.email             = 'mud@media.mit.edu'
+  s.homepage          = 'http://www.buzamoto.com'
 
   #s.files         = `git ls-files`.split("\n")
   #s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
